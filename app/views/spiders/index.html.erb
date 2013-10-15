@@ -1,0 +1,12 @@
+<div class="spiders">
+<% @spiders.each do |spider| %>
+	<h3> <%= spider.name %> </h3>
+	<%= link_to spider.name, spider %>
+	Terror Level: <%= spider.terror %>
+	<%= link_to "edit spider", edit_spider_path(spider) %>
+<% end %>
+</div>
+
+<%= link_to "New Spider", new_spider_path %>
+
+<!-- button_to does post by default -->
