@@ -1,0 +1,13 @@
+<div class="new_spider">
+	<div><%= form_for(@spider) do |f| %></div>
+		<div><%= f.label :name %><%= f.text_field :name %></div>
+		<div><%= f.label :poisonous %><%= f.check_box :poisonous %></div>
+		<div><%= f.label :weight %><%= f.text_field :weight %></div>
+		<div><%= f.label :origin %><%= f.text_field :origin %></div>
+		<div><%= f.label :habitat %><%= f.text_field :habitat %></div>
+		<div><%= f.label :color %><%= f.text_field :color %></div>
+		<div><%= f.label :terror %><%= f.text_field :terror %></div>
+		<div> <%= f.label :image_url %> <%= f.text_field :image_url %></div>
+		<div> <%= f.submit %> </div>
+	<% end %>
+</div>

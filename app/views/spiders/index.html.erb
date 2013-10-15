@@ -1,6 +1,7 @@
 <div class="spiders">
 <% @spiders.each do |spider| %>
 	<h3> <%= spider.name %> </h3>
+	<%= image_tag spider.image_url, height: '32', width: '32' %>
 	<%= link_to spider.name, spider %>
 	Terror Level: <%= spider.terror %>
 	<%= link_to "edit spider", edit_spider_path(spider) %>
