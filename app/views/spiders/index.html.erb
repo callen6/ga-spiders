@@ -4,6 +4,7 @@
 	<%= link_to spider.name, spider %>
 	Terror Level: <%= spider.terror %>
 	<%= link_to "edit spider", edit_spider_path(spider) %>
+	<%= link_to "destroy spider", spider, method: :delete, data:{confirm: "are you sure?"} %>
 <% end %>
 </div>
 
